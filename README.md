@@ -9,7 +9,7 @@ Je me disais : "Oh mon Dieu, je connais **HTML, CSS, JavaScript et sa bibliothè
 Je savais déjà comment utiliser le JavaScript coté client, mais que quelqu'un me parle d'une superbe technologie conçue en **C++** (Un langage de programmation très performant) qui permet d'exécuter le JavaScript coté serveur. Ça avait piqué automatiquement ma curiosité. 
 L'histoire continue ...
 
-Alors, je m'étais lancé dans l'apprentissage de cette technologie. C'est une technologie qui continuent à surprendre même le professionnel du web Comme **Facebook, Amazone, Google, Apple, Uber, NASA .... **
+Alors, je m'étais lancé dans l'apprentissage de cette technologie. C'est une technologie qui continuent à surprendre même le professionnel du web Comme **Facebook, Amazone, Google, Apple, Uber, NASA ....**
 
 
 **Oui les preuves sont solide !**
