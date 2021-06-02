@@ -1,0 +1,193 @@
+
+Je te montre les actions faciles qu'il faut nécessairement exécuter pour installer Nodejs. Ce sont des actions qui sont documenté sur la page de téléchargement officielle de NodeJs.
+
+Téléchargement nodejs
+
+Tu vas trouver des actions pour tous les systèmes d'exploitation supporté par Nodejs.
+
+Je reste concentrer sur les actions qui vont te permettre de :
+
+🔹Télécharger et Installer Nodejs sur Windows.
+
+Comment installer NodeJS sur Windows ?
+Pour installer Node.js sous Windows, il suffit de se rendre sur la page de téléchargement de Node.js et de choisir l'installeur qui est proposé pour windows. Oui, En cliquant simplement sur le lien Install.
+
+Tu as le choix entre télécharger soit le .msi, soit le .exe ce qui produira un résultat similaire.
+
+Choisi la version 64 bits si tu as un système d'exploitation Windows en versions 64 bits Et 32 Bits pour un Windows 32 bits.
+
+Une fois les étapes complétée avec du suivant-suivant. À la fin, on te dit que Node.js est installé... Oui, mais où ? Comment ça marche ?
+
+En fait, tu trouveras 2 programmes installés :
+
+🔹Node.js : C'est l'interpréteur de commandes de Node.js (dont nous parlerons à la fin de ce chapitre). Nous l'utiliserons assez peu en pratique. Il sert à tester des commandes JavaScript.
+🔹Node.js command prompt : C'est une console de Windows configurée pour reconnaître Node.js. C'est par là que tu passeras pour lancer tes programmes Node.js, c'est donc ce que nous utiliserons le plus souvent.
+
+Comment installer NodeJS sur MacOS ?
+Tu as un Mac OS X, tu choisir de cliquer sur le lien "Install" sur la page de téléchargement de Node.js qui correspond.
+
+Pour aller vite je te recommande de prendre l'installeur (fichier .pkg).
+
+Il ouvre un assistant d'installation, dans lequel il suffit de suivre la méthode : "Suivant-Suivant".
+
+Une fois l'installation terminée, tu as la possibilité de vérifier que Node.js fonctionne correctement en tapant la commande node dans la console.
+
+Pour vérifier, tu ouvres une fenêtre de Terminal (le Terminal étant installé par défaut sous Mac OS X), en allant dans le Finder, section "Applications", "Terminal". Je te conseille de mettre un raccourci dans le dock !
+
+Fais toi plaisir en testant quelques commandes comme: node -v(pour avoir le numéro de version) ou node tout court pour lancer l'interpréteur interactif.
+
+Lorsque l'interpréteur est lancé, tu peux taper des commandes JavaScript et obtenir une réponse.
+
+Par exemple :
+
+console.log('Bonjour Eurekademie')
+ou encore :
+
+1 + 1
+Pour quitter l'interpréteur, Tu combines Ctrl + D.
+
+pas de panique ! L'interpréteur de commande nodejs sert ici surtout pour faire des tests.
+
+En pratique, tu va écrire des fichiers .js et demander à Node de les exécuter.
+
+Comment installer nodeJS sur ubuntu ?
+Sous Linux, comme d'habitude, tu as deux choix :
+
+🔹La méthode 100% geek, qui consiste à télécharger les sources et à les compiler.
+🔹La méthode douce, qui consiste à utiliser le gestionnaire de paquets de sa distribution.
+Je suis un fan de la méthode douce, j'aime bien la console linux parce que c'est rapide . Je n'ai pas problème avec la méthode warrior, c'est une méthode que j'utilise en cas de résistance de la méthode douce(c'est qui n'arrive que dans très rare occasion).
+
+Toute fois, tu peux retrouver les instructions officielles sur le site de Node.js.
+
+Il te suffit donc de rentrer les commandes suivantes :
+
+Node.js 12 (LTS) :
+
+sudo su
+curl -sL https://deb.nodesource.com/setup_12.x | bash -
+sudo apt-get install -y nodejs
+Node.js 10 (current) :
+
+curl-sL https://deb.nodesource.com/setup_10.x |sudo-Ebash- 
+sudo apt install -y nodejs
+Et voilà le travail ! Pour vérifier que Nodejs est bien installé, voici quelques commandes à tapez dans le terminal :
+
+node -v
+node
+🔹La première affiche le numéro de version de Node.js que tu as installé.
+🔹La seconde lance l'interpréteur interactif de Node.js.
+Tu peux y taper du code JavaScript par exemple console.log("Installer nodejs"). Pour sortir de l'interpréteur, il suffit de faire Ctrl + D.
+
+Pour les autres distribution, la liste à jour est maintenue sur le site officiel de Node : nodejs package-manager.
+
+Comment fonctionne le gestionnaire de packages nodejs ?
+Un gestionnaire de packages pour ton code vas permet d'utiliser et de partager du code avec d'autres développeurs du monde entier.
+
+Partager le code rapidement, en toute sécurité et de manière fiable afin que personne n'aie jamais à s'inquiéter.
+
+Un gestionnaire de packages vous permet d'utiliser les solutions d'autres développeurs pour différents problèmes, ce qui te permet de développer plus facilement ton application web.
+
+Si tu as des problèmes, tu peux signaler des problèmes ou apporter une contribution, et lorsque le problème est résolu, tu peux utiliser Un gestionnaire de packages pour faire une mise à jour.
+
+Le code est partagé par ce qu'on appelle un package. Un package contient tout le code partagé ainsi qu'un package.json fichier (appelé manifeste ) qui décrit le package.
+
+Comment fonctionne le gestionnaire de packages Npm ?
+Depuis les versions les plus récentes de Node.js, il faut savoir que NPM est installé en même temps automatiquement.
+
+NPM est le gestionnaire de paquets de Node.js (c'est un peu l'équivalent de apt, mais pour les extensions Node.js).
+
+NPM est vraiment un outil incroyable qui va te permettre d'étendre les possibilités de Node.js à l'infini.
+
+En ajoutant des petits ou gros modules documenter et développer par d'autre développeur pour résoudre un certains nombre de problème récurrent.
+
+Voici une petite liste de commande npm : Accéder à la liste des commandes :
+
+npm -l
+Commencer un nouveau projet :
+
+npm init
+Installation de toutes les dépendances :
+
+Ajout d'une dépendance :
+
+npm install [package]
+npm install [package]@[version]
+npm install [package]@[tag]
+Ajout d'une dépendance à différentes catégories de dépendances :
+
+npm install [package] --dev  # dev dependencies
+npm install [package] --peer # peer dependencies
+npm install [package] --save  # en local
+npm install [package] --global # de manière global
+Mise à niveau d'une dépendance :
+
+npm update [package]
+npm update  [package]@[version]
+npm update  [package]@[tag]
+Suppression d'une dépendance :
+
+npm uninstall [package]
+Mise à niveau du fil lui-même :
+
+npm i npm --global
+Comment fonctionne le gestionnaire de pakages Yarn ?
+Perso, j'utilise beaucoup yarn, au début je voulais juste le testé, avec le temps j'ai compris qu'il y avait tellement à gagner que je suis resté la dessus. Comment yarn m'a t-il convaincu ?
+
+Le marketing voudrait que les développeurs amateurs ou professionals utilisent yarn sur des projets ponctuels ou de grands monorepos.
+
+Voici leurs slogan marketing : Projets sûrs, stables et reproductibles.
+
+Yarn est un produit d’une collaboration entre plusieurs équipes dont des développeurs de chez Facebook et Google.
+
+Ce dernier a été développé dans le but de résoudre un certain nombre de problèmes que ses auteurs ont eu à rencontrer en utilisant Npm comme gestionnaire de dépendance :
+
+🔹Npm n’était pas assez rapide.
+🔹Npm présentait des problèmes de cohérence lors de l’installation des dépendances sur des machines différentes.
+Toute fois il est très important de savoir que :
+
+🔹Yarn cosomme les mêmes registres que Npm pour télécharger les données.
+🔹Yarn accède et manipule le fichier de dépendances package.json exactement de la même comme le fait Npm. Ce pourquoi, il est pratiquement possible d’utiliser Yarn au sein d’un projet qui a dépendances ont toujours été installées avec Npm, que ce soit pour le remplacer complètement ou utiliser les deux outils en parallèle.
+Voici les quelques avantages du gestionnaire de package Yarn :
+
+🔹Diviser ton projet en sous-composants conservés dans un référentiel unique
+🔹Offrir la garantie qu'une installation qui fonctionne maintenant continuera de fonctionner de la même manière à l'avenir.
+🔹Lorsqu’une dépendance est installée par Yarn, ce dernier génère un fichier yarn.lock permettant de verrouiller toute les dépendances sur une version précise. Grâce à ce lockfile, tous les membres contribuant à un projet posséderont le même jeu de dépendances.
+🔹Yarn offre la possibilité d’installer un paquet malgré l’absence de connexion internet, à condition qu’il ait déjà été installé sur la machine auparavant.
+Voici un petit guide d'utilisation de yarn
+
+Accéder à la liste des commandes :
+
+yarn help
+Commencer un nouveau projet :
+
+yarn init
+Installation de toutes les dépendances :
+
+yarn
+yarn install
+Ajout d'une dépendance :
+
+yarn add [package]
+yarn add [package]@[version]
+yarn add [package]@[tag]
+Ajout d'une dépendance à différentes catégories de dépendances :
+
+yarn add [package] --dev  # dev dependencies
+yarn add [package] --peer # peer dependencies
+Mise à niveau d'une dépendance :
+
+yarn up [package]
+yarn up [package]@[version]
+yarn up [package]@[tag]
+
+Suppression d'une dépendance :
+
+yarn remove [package]
+Mise à niveau du fil lui-même :
+
+yarn set version 2.0.0
+yarn set version from sources
+Conclusion
+Je viens de te montrer les meilleurs techniques pour installer nodejs sur windows, mac os et Ubuntu.
+
+ By tcotidiane ... thanks 3w.trakode.com
